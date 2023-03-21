@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1. feladat</title>
+    <style>
+        #megjelenito {
+            font-size: large;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <input type="text" value="" id="karakterszam">
+    <div id="megjelenito"></div>
+
+
+
+    <script>
+
+        karakterszam.addEventListener("input", szamlalo);
+
+        function szamlalo() {
+            let karakter = document.querySelector("#karakterszam").value;
+
+            document.querySelector("#megjelenito").innerHTML = "Karakter összege: " + karakter.length;
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>

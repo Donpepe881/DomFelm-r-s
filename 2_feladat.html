@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2. feladat</title>
+</head>
+<style>
+    #rajzol {
+        float: right;
+    }
+
+
+    #kocka {
+        width: 0px;
+        height: 0px;
+        border: 2px solid black;
+        margin: 0px auto;
+    }
+</style>
+
+<body>
+    <input type="number" id="x" value="100">
+    <input type="number" id="y" value="100">
+    <button id="rajzol">Kirajzol</button>
+    <div id="kocka"></div>
+
+
+    <script>
+
+        rajzol.addEventListener("click", kockaMegjelenito);
+
+        function kockaMegjelenito() {
+            let szelesseg = document.querySelector("#x").value;
+            let magassag = document.querySelector("#y").value;
+            let rajzoltKocka = document.querySelector("#kocka");
+            rajzoltKocka.style.width = szelesseg + "px";
+            rajzoltKocka.style.height = magassag + "px";
+
+            // document.querySelector("#kocka").width = szelesseg;
+            // document.querySelector("#kocka").style.height = magassag;
+
+
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
